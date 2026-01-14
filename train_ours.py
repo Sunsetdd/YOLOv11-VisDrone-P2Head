@@ -2,7 +2,7 @@ from ultralytics import YOLO
 import multiprocessing
 
 def main():
-    # 1. 加载你的创新 P2 结构
+    # 1. 加载创新 P2 结构
     model = YOLO("yolo11-p2.yaml") 
     
     # 2. 加载预训练权重 (迁移学习加速收敛)
@@ -41,4 +41,5 @@ def main():
 
 if __name__ == '__main__':
     multiprocessing.freeze_support()
+
     main()
